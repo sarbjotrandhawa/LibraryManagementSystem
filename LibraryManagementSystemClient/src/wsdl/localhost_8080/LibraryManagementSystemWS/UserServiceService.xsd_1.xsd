@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://service.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.com/">
+
+<xs:element name="DeleteUser" type="tns:DeleteUser"/>
+
+<xs:element name="DeleteUserResponse" type="tns:DeleteUserResponse"/>
+
+<xs:element name="DisplayUser" type="tns:DisplayUser"/>
+
+<xs:element name="DisplayUserById" type="tns:DisplayUserById"/>
+
+<xs:element name="DisplayUserByIdResponse" type="tns:DisplayUserByIdResponse"/>
+
+<xs:element name="DisplayUserResponse" type="tns:DisplayUserResponse"/>
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="InsertUser" type="tns:InsertUser"/>
+
+<xs:element name="InsertUserResponse" type="tns:InsertUserResponse"/>
+
+<xs:element name="NonexistentEntityException" type="tns:NonexistentEntityException"/>
+
+<xs:element name="libraryuser" type="tns:libraryuser"/>
+
+<xs:element name="updateUser" type="tns:updateUser"/>
+
+<xs:element name="updateUserResponse" type="tns:updateUserResponse"/>
+
+<xs:complexType name="InsertUser">
+<xs:sequence>
+<xs:element name="arg0" type="tns:libraryuser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="libraryuser">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="firstname" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="lastname" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="phone" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertUserResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateUser">
+<xs:sequence>
+<xs:element name="arg0" type="tns:libraryuser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeleteUser">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeleteUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NonexistentEntityException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DisplayUser">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="DisplayUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:libraryuser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DisplayUserById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DisplayUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:libraryuser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

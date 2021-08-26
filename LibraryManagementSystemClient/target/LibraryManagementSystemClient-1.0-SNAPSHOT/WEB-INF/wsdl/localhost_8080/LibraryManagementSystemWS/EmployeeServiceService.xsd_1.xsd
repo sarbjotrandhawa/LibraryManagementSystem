@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://service.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.com/">
+
+<xs:element name="DeleteEmployee" type="tns:DeleteEmployee"/>
+
+<xs:element name="DeleteEmployeeResponse" type="tns:DeleteEmployeeResponse"/>
+
+<xs:element name="DisplayEmployeeById" type="tns:DisplayEmployeeById"/>
+
+<xs:element name="DisplayEmployeeByIdResponse" type="tns:DisplayEmployeeByIdResponse"/>
+
+<xs:element name="DisplayEmployees" type="tns:DisplayEmployees"/>
+
+<xs:element name="DisplayEmployeesResponse" type="tns:DisplayEmployeesResponse"/>
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="InsertEmployee" type="tns:InsertEmployee"/>
+
+<xs:element name="InsertEmployeeResponse" type="tns:InsertEmployeeResponse"/>
+
+<xs:element name="NonexistentEntityException" type="tns:NonexistentEntityException"/>
+
+<xs:element name="SearchEmployeeById" type="tns:SearchEmployeeById"/>
+
+<xs:element name="SearchEmployeeByIdResponse" type="tns:SearchEmployeeByIdResponse"/>
+
+<xs:element name="UpdateEmployee" type="tns:UpdateEmployee"/>
+
+<xs:element name="UpdateEmployeeResponse" type="tns:UpdateEmployeeResponse"/>
+
+<xs:element name="employee" type="tns:employee"/>
+
+<xs:complexType name="DisplayEmployees">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="DisplayEmployeesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:employee" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="employee">
+<xs:sequence>
+<xs:element name="dateofjoining" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="employeefirstname" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeid" type="xs:int" minOccurs="0"/>
+<xs:element name="employeelastname" type="xs:string" minOccurs="0"/>
+<xs:element name="isadmin" type="xs:int" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="phone" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DisplayEmployeeById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DisplayEmployeeByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:employee" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeleteEmployee">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeleteEmployeeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NonexistentEntityException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchEmployeeById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchEmployeeByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:employee" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertEmployee">
+<xs:sequence>
+<xs:element name="arg0" type="tns:employee" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertEmployeeResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="UpdateEmployee">
+<xs:sequence>
+<xs:element name="arg0" type="tns:employee" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateEmployeeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

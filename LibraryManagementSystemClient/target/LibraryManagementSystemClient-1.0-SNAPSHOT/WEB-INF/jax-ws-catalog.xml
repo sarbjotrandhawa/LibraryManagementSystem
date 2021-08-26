@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/UserServiceService?WSDL" uri="wsdl/localhost_8080/LibraryManagementSystemWS/UserServiceService.wsdl"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/UserServiceService?xsd=1" uri="wsdl/localhost_8080/LibraryManagementSystemWS/UserServiceService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/BooksServiceService?WSDL" uri="wsdl/localhost_8080/LibraryManagementSystemWS/BooksServiceService.wsdl"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/BooksServiceService?xsd=1" uri="wsdl/localhost_8080/LibraryManagementSystemWS/BooksServiceService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/AuthenticatorServiceService?WSDL" uri="wsdl/localhost_8080/LibraryManagementSystemWS/AuthenticatorServiceService.wsdl"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/AuthenticatorServiceService?xsd=1" uri="wsdl/localhost_8080/LibraryManagementSystemWS/AuthenticatorServiceService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/EmployeeServiceService?WSDL" uri="wsdl/localhost_8080/LibraryManagementSystemWS/EmployeeServiceService.wsdl"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/EmployeeServiceService?xsd=1" uri="wsdl/localhost_8080/LibraryManagementSystemWS/EmployeeServiceService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/BookOperationsService?WSDL" uri="wsdl/localhost_8080/LibraryManagementSystemWS/BookOperationsService.wsdl"/>
+    <system systemId="http://localhost:8080/LibraryManagementSystemWS/BookOperationsService?xsd=1" uri="wsdl/localhost_8080/LibraryManagementSystemWS/BookOperationsService.xsd_1.xsd"/>
+</catalog>
